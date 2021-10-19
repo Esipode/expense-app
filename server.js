@@ -40,7 +40,7 @@ connection.once("open", () => {
     console.log("Successfully connected to MongoDB!")
 })
 
-const router = require("./routes/expenses")
+const router = require("./backend/routes/expenses")
 app.use("/expenses", router);
 
 app.listen(port, () => {
