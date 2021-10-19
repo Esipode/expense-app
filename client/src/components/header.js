@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { updateTable } from 'reducer';
-import { currency } from 'helpers';
+import { updateTable } from '../reducer';
+import { currency } from '../helpers';
 
 /**
  * App header and expense add button

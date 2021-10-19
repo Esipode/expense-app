@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { currency } from 'helpers';
-import { updateTable } from 'reducer';
-import DataButtons from 'components/table/dataButtons';
+import { currency } from '../../helpers';
+import { updateTable } from '../../reducer';
+import DataButtons from './dataButtons';
 
 /**
  * Expense table body

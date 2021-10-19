@@ -1,5 +1,5 @@
-import TableHeader from 'components/table/tableHeader'
-import TableBody from 'components/table/tableBody'
+import TableHeader from './table/tableHeader'
+import TableBody from './table/tableBody'
 
 /**
  * Container for table components

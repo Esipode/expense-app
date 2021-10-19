@@ -1,38 +1,20 @@
 {
   "name": "expense-app",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": ".",
+  "version": "1.0.0",
+  "main": "server.js",
   "dependencies": {
-    "better-docs": "^2.3.2",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "jsdoc": "^3.6.7",
     "mongoose": "^6.0.11",
-    "node-sass": "^4.14.1",
-    "nodemon": "^2.0.13",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-redux": "^7.2.5",
-    "react-scripts": "4.0.3",
-    "readme-md-generator": "^1.0.0",
-    "redux": "^4.1.1"
+    "nodemon": "^2.0.13"
   },
   "scripts": {
-    "start": "nodemon backend/server.js",
-    "svr": "cd backend && nodemon server",
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "server": "node backend/server.js",
-    "heroku-postbuild": "npm install && npm run build",
-    "docs": "jsdoc -c ./jsdoc.json"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "browserslist": {
     "production": [

@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { updateTable } from "reducer";
-import { addExpense, deleteExpense, updateExpense } from "helpers";
+import { updateTable } from "../../reducer";
+import { addExpense, deleteExpense, updateExpense } from "../../helpers";
 
 /**
  * Expense table body

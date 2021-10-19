@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
-import Header from 'components/header'
-import Table from 'components/table'
+import Header from './header'
+import Table from './table'
 
 /**
  * Form wrapper for expense table

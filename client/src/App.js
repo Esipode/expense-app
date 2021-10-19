@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { updateTable } from "reducer";
-import "scss/App.scss";
-import ExpenseWrapper from "components/expenseWrapper"
-import { getExpenses } from "helpers";
+import { updateTable } from "./reducer";
+import "./scss/App.scss";
+import ExpenseWrapper from "./components/expenseWrapper"
+import { getExpenses } from "./helpers";
 
 
 /**
