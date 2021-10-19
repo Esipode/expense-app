@@ -1,0 +1,85 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+
+    thead {
+        border-bottom: 2px solid black;
+        tr {
+
+            th {
+                padding-bottom: 5px;
+                text-align: left;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+            td {
+                padding: 5px 0;
+
+                .include-dollar {
+                    margin-left: -12px;
+                    padding-left: 10px;
+                }
+
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+                }
+
+                /* Firefox */
+                input[type=number] {
+                -moz-appearance: textfield;
+                }
+            }
+
+            .btn-wrapper {
+                width: 150px;
+                
+                button {
+                    margin: 0 3px;
+
+                    &:disabled {
+                        pointer-events: none;
+                        opacity: 0.5;
+                    }
+                }
+
+                .update-btn {
+                    background: $blue;
+    
+                    &:hover {
+                        border: 2px solid $blue;
+                        color: $blue;
+                        background: transparent;
+                    }
+                }
+
+                .edit-btn {
+                    background: $yellow;
+    
+                    &:hover {
+                        border: 2px solid $yellow;
+                        color: $yellow;
+                        background: transparent;
+                    }
+                }
+
+                .delete-btn {
+                    background: $red;
+    
+                    &:hover {
+                        border: 2px solid $red;
+                        color: $red;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
