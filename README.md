@@ -1,11 +1,16 @@
 <h1 align="center">Expense App</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://esipode.github.io/expense-app/" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
 </p>
 
 > Simple expense tracking application
 
-### 🏠 [Homepage](.)
+### 🏠 [Source Code](https://github.com/Esipode/expense-app)
+
+### ✨ [Demo](https://chad-expense-app.herokuapp.com/)
 
 ## Install
 
