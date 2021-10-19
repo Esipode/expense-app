@@ -28,7 +28,7 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static("build"));
 
     app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname, "build,", "index.html"));
+        res.sendFile(path.resolve(__dirname, "../build/index.html"));
     });
 }
 
@@ -40,7 +40,7 @@ connection.once("open", () => {
     console.log("Successfully connected to MongoDB!")
 })
 
-const router = require("./backend/routes/expenses")
+const router = require("./routes/expenses")
 app.use("/expenses", router);
 
 app.listen(port, () => {
