@@ -5,10 +5,12 @@
  * @requires cors
  * @requires mongoose
  * @requires dotenv
+ * @requires path
  */
 
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const mongoose = require("mongoose");
 
 require("dotenv").config();
