@@ -20,7 +20,7 @@
     "redux": "^4.1.1"
   },
   "scripts": {
-    "start": "node backend/server.js && npm run start-client.js",
+    "start": "nodemon backend/server.js",
     "svr": "cd backend && nodemon server",
     "dev": "react-scripts start",
     "build": "react-scripts build",
